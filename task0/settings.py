@@ -26,10 +26,10 @@ SECRET_KEY = 'django-insecure-9+9+aa0hn3*zwkpnznhz577!w3rgh*@v$*+0$c340x30ar%wyy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hng12-ceyj.vercel.app']
+ALLOWED_HOSTS = ['https://hng12-ceyj-jx35pl3yv-hngs-projects-9d2c68a8.vercel.app/']
 
 
-# Application definition
+ # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhitNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -119,7 +120,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = 'static/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
