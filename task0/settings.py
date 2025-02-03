@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9+9+aa0hn3*zwkpnznhz577!w3rgh*@v$*+0$c340x30ar%wyy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -45,7 +45,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -107,9 +106,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
-STATIC_DIRS = [os.path.join(BASE_DIR, 'new_app/static')]
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 LANGUAGE_CODE = 'en-us'
 
