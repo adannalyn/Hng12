@@ -69,6 +69,12 @@ GET /api/info/
 }
 ```
 
+### Example Usage (using `curl`):
+
+```bash
+curl [https://hng12-modified.vercel.app/api/info/](https://hng12-modified.vercel.app/api/info/)
+```
+
 ### Example Usage (using Python's `requests` library):
 
 ```python
