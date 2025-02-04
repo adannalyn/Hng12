@@ -1,5 +1,5 @@
 ````markdown
-# HNGx Stage 1 Task - Basic Information API
+# HNGx Stage 0 Task - Basic Information API
 
 This project implements a simple public API that retrieves basic information, including an email address, the current UTC datetime, and the GitHub URL of the project's codebase. It's built using Django and designed to be deployed on platforms like Vercel.
 
