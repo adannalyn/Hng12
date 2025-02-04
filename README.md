@@ -5,7 +5,7 @@ This project implements a simple public API that retrieves basic information, in
 
 ## Setup Instructions
 
-**Clone the repository:**
+## Clone the repository:
 
    ```bash
    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)  # Replace with your repo URL
