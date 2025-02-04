@@ -69,8 +69,6 @@ GET /api/info/
 }
 ```
 
-### Example Usage (using `curl`):
-
 ### Example Usage (using Python's `requests` library):
 
 ```python
