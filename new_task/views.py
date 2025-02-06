@@ -1,4 +1,3 @@
-##
 from django.http import JsonResponse
 from math import isqrt
 from django.views.decorators.csrf import csrf_exempt
@@ -85,13 +84,13 @@ def get_number(request):
     except requests.exceptions.RequestException as e:
         fun_fact = f"Could not retrieve fun fact about {number}. Error: {e}"
 
-        data = {
-            "number": number,
-            "is_prime": prime,
-            "is_perfect": perfect,
-            "properties": properties,
-            "digit_sum": adds,
-            "fun_fact": fun_fact
-        }
-        
-        return JsonResponse(data)
+    data = {
+        "number": number,
+        "is_prime": prime,
+        "is_perfect": perfect,
+        "properties": properties,
+        "digit_sum": adds,
+        "fun_fact": fun_fact
+    }
+    
+    return JsonResponse(data)
